@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="ShowBass"
+        android:defaultValue="true"
+        android:summaryOff="hidden"
+        android:summaryOn="show"
+        android:key="show_bass"/>
+
+    <EditTextPreference
+        android:defaultValue="@string/pref_default_value"
+        android:title="@string/pref_edit_label"
+        android:key="@string/pref_edit_key" />
+
+    <ListPreference
+        android:key="@string/pref_color_key"
+        android:defaultValue="@string/pref_color_label_red"
+        android:title="Color"
+        android:entries="@array/color_name"
+        android:entryValues="@array/color_value"/>
+
+
+</PreferenceScreen>
